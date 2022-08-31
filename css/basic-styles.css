@@ -1,3 +1,28 @@
-body{
-    font-family: "iranyekanwebregular";
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+    font-family: "iranyekanwebmedium";
+	background-color: var(--color-body);
+	font-size: 1.6rem;
+	line-height: 1.7;
+}
+/* 
+button{
+    font-family: "iranyekanwebregular";
+    background:none;
+    padding: 1rem 2rem;
+    outline: 0;
+    border: 0;
+} */
