@@ -10,14 +10,14 @@
 	--color-white: #fff;
     --text-color: #292929;
     --color-gray: #c3c3c3;
-    --box-shadow:
-    /* box-shadow: 14px 12px 47px -15px rgba(0,0,0,0.6);*/
+    --blue-btn: #47c4fd;
 	--avatar-sizes: 50px;
 }
 
 .container{
     max-width: 1140px;
     margin: 0 auto;
+    /* margin: 5rem 2rem; */
 }
 
 
@@ -44,7 +44,18 @@
     background-color: var(--color-primary);
 }
 
+.btn--secondary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
 
+.btn--secondary:hover{
+    background-color: var(--color-secondary-light);
+}
+
+.btn--block{
+    width: 100%;
+}
 
 
 /* ----------HEADER STYLE--------- */
@@ -135,7 +146,7 @@
 
 
 
-/* RESPONSIVE HEADER */
+/*============= RESPONSIVE HEADER ============= */
 
 @media screen and (min-width: 768px) and (max-width: 950px){
     .nav .nav__item{
@@ -166,12 +177,12 @@
 
 
 
-/* ----------BANNER STYLE--------- */
+/* ============== BANNER STYLE =============*/
 
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 5rem auto;
+    margin-top: 7rem;
     border-radius: 50px;
     background: #FFFFFF;
     background: -webkit-radial-gradient(center, #FFFFFF, #FF8EC4);
@@ -212,7 +223,7 @@
 }
 
 
-/* RESPONSIVE BANNER */
+/*============ RESPONSIVE BANNER ============*/
 
 @media screen and (max-width: 1140px){
     .title{
@@ -288,5 +299,104 @@
     }
     .banner-body{
         font-size: 1rem;
+    }
+}
+
+
+/* =========== PRODUCT STYLE ======== */
+
+.products{
+    margin-top: 10rem;
+}
+
+.products-title{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+}
+
+.product-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+.product{
+    box-shadow: 10px 12px 15px -15px rgba(34, 31, 31, 0.4);
+    border: 1px solid #c0c0c0;
+    border-radius: 15px;
+    width: 350px;
+}
+
+.product__img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+}
+.product__img img:hover{
+    opacity: 1;
+}
+
+.product__body{
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.product__body .title{
+    font-size: 1.5rem;
+    color: var(--color-headings);
+    text-align: center;
+}
+
+
+.btn-product{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+/* ============ PRODUCT RESPONSIVE ============ */
+
+
+@media screen and (max-width: 1140px){
+
+    .product-wrapper{
+        justify-content: space-around;
+    }
+    .product{
+        width: 400px;
+    }
+    .product__img img{
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .product{
+        width: 450px;
+    }
+    .product__img img{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .product{
+        width: 320px;
+    }
+    .product__img img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .product{
+        width: 280px;
     }
 }
