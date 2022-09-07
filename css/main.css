@@ -495,7 +495,7 @@
 }
 
 .discount__section{
-    width: 500px;
+    max-width: 500px;
 }
 
 .discount__section h5{
@@ -547,8 +547,11 @@
 
 
 @media screen and (max-width: 1140px){
+    .discount-wrapper{
+        justify-content: space-around;
+    }
     .discount__section{
-        width: 450px;
+        max-width: 400px;
     }
 }
 
@@ -557,7 +560,7 @@
         flex-direction: column;
     }
     .discount__section{
-        width: 100%;
+        max-width: 500px;
     }
 }
 
