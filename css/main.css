@@ -567,3 +567,60 @@
         padding: 2rem 1.5rem;
     }
 }
+
+
+
+
+
+/* ========== ABOUT STORE ========== */
+
+.about-store-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem 2rem;
+}
+
+.about__body{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    border-radius: 5px;
+    background-color: var(--color-white);
+}
+
+.about__body i{
+    font-size: 3.5rem;
+    color: var(--color-secondary-dark);
+}
+.about-title{
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+.about__body h6{
+    text-align: center;
+}
+
+
+
+/* ========== RESPONSIVE ABOUT STORE ========== */
+
+
+@media screen and (max-width: 1140px){
+    .about__body{
+        width: 200px;
+    }
+    .about-store-wrapper{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about__body{
+        width: 200px;
+    }
+}
