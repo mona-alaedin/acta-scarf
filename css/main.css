@@ -13,7 +13,6 @@
     --blue-btn: #47c4fd;
     --bg-footer: #1f0217;
     --footer-color: #d3d3d3;
-	--avatar-sizes: 50px;
 }
 
 .container{
@@ -26,6 +25,7 @@
 
 .btn{
     font-family: "iranyekanwebregular";
+    display: inline-block;
     background:none;
     padding: 0.8rem 2rem;
     outline: 0;
@@ -119,7 +119,7 @@
     color: var(--color-primary);
 }
 
-.navbar__nav > button{
+.navbar__nav > a{
     letter-spacing: 2px;
 }
 
@@ -170,7 +170,7 @@
     .navbar__nav > i{
         display: block;
     }
-    .navbar__nav > button{
+    .navbar__nav > a{
         display: none;
     }
 }
@@ -762,4 +762,78 @@
     .footer-title{
         margin-top: 1rem;
     }
+}
+
+
+
+/* =========== FORM STYLE =========*/
+
+
+.form-container{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
+    /* align-items: center; */
+}
+
+
+
+.form-wrapper{
+    background-color: #ffadba;
+    padding: 3rem 6rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 15px;
+}
+
+.form-title{
+    text-align: center;
+    color: var(--bg-footer);
+    font-size: 2.5rem;
+}
+
+.form-wrapper p{
+    margin: 2rem 0;
+    border-bottom: 1px solid black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    margin-bottom: 1.8rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.form label{
+    color: #292929;
+    font-size: 1.4rem;
+}
+
+.form__button{
+    margin-top: 2rem;
+}
+
+.form__button input{
+    background: none;
+}
+
+
+.submit-button{
+    background-color: var(--color-secondary-dark);
+    border: none;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+.submit-button a{
+    display: block;
+    padding: 0.8rem;
+    font-family: "iranyekanwebregular";
+    color: var(--color-white);
+    font-size: 1.5rem;
 }
